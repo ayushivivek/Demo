@@ -199,14 +199,6 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
-  pageButton: {
-    backgroundColor: "#ffdcb5",
-    border: "none",
-    cursor: "pointer",
-    transition: "background-color 0.2s",
-    borderRadius: "10px",
-    padding: "10px",
-  },
 }));
 
 function App() {
