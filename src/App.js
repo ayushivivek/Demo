@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   active: {
-    backgroundColor: "#ff9d1a",
+    backgroundColor: "#ff9d1a !important",
     color: "#fff",
   },
 
@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     marginTop: theme.spacing(2),
+    gap: theme.spacing(1),
   },
   pageButton: {
     backgroundColor: "#ffdcb5",
@@ -49,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
     transition: "background-color 0.2s",
     borderRadius: "10px",
     padding: "10px",
+    minWidth: "unset",
   },
   dd: {
     display: "flex",
@@ -300,7 +302,7 @@ function App() {
           <Button
             key={number}
             variant="contained"
-            className={`${currentPage === number + 1 ? classes.active : ""}${
+            className={`${currentPage === number + 1 ? classes.active : ""} ${
               classes.pageButton
             } `}
             onClick={() => setCurrentPage(number + 1)}
