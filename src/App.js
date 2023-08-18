@@ -308,7 +308,7 @@ function App() {
           <Button
             key={number}
             variant="contained"
-            className={`${currentPage == number + 1 ? classes.active : ""}${
+            className={`${currentPage === number + 1 ? classes.active : ""}${
               classes.pageButton
             } `}
             onClick={() => setCurrentPage(number + 1)}
